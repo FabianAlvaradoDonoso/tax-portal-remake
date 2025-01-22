@@ -1,5 +1,6 @@
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { Button } from '@/components/ui/button'
 import { CardDashboard } from '@/sections/dashboard/card-dashboard'
 import {
   Select,
@@ -10,7 +11,7 @@ import {
   SelectContent,
 } from '@/components/ui/select'
 
-export function Search() {
+export function Search(props: { handleShow: () => void }) {
   return (
     <CardDashboard
       title="Búsqueda"
@@ -33,6 +34,11 @@ export function Search() {
             </SelectGroup>
           </SelectContent>
         </Select>
+      </div>
+      <div className="grid w-full items-end gap-1.5">
+        <Button variant="outline" className="" onClick={props.handleShow}>
+          Buscar
+        </Button>
       </div>
     </CardDashboard>
   )

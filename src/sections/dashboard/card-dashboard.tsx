@@ -9,7 +9,7 @@ interface CardDashboardProps {
 export function CardDashboard({ children, title, className }: CardDashboardProps) {
   return (
     <Card className="relative flex flex-col">
-      <CardHeader className="">
+      <CardHeader className="p-4">
         <CardTitle className="absolute -top-4 w-fit rounded-3xl border bg-background px-2 py-1 text-sm font-semibold">
           {title}
         </CardTitle>
