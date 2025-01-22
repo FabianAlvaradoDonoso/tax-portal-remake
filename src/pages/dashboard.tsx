@@ -1,7 +1,9 @@
 import { Info } from '@/sections/dashboard/info/info'
 import { Search } from '@/sections/dashboard/search/search'
 import { Semaforo } from '@/sections/dashboard/semaforo/semaforo'
-import { CardDashboard } from '@/sections/dashboard/card-dashboard'
+import { Formularios } from '@/sections/dashboard/formularios/formularios'
+import { Notificaciones } from '@/sections/dashboard/notificaciones/notificaciones'
+import { DeclaracionesJuradas } from '@/sections/dashboard/declaraciones-juradas/declaraciones-juradas'
 
 const DashboardPage = () => (
   <div className="flex h-full w-full flex-col space-y-7">
@@ -10,10 +12,9 @@ const DashboardPage = () => (
     <Search />
     <Info />
     <Semaforo />
-
-    <CardDashboard title="Formularios">inputs</CardDashboard>
-    <CardDashboard title="Declaraciones Juradas">inputs</CardDashboard>
-    <CardDashboard title="Notificaciones">inputs</CardDashboard>
+    <Formularios />
+    <DeclaracionesJuradas />
+    <Notificaciones />
   </div>
 )
 
